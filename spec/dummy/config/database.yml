@@ -2,25 +2,17 @@ default: &default
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: PlannerPrime
-  username: plannerdev
-  password: plannerdev
+  username: root
+  password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
   pool: 5
-  socket: /tmp/mysql.sock
-
-#  adapter: mysql2
-#  encoding: utf8
-#  host: 127.0.0.1
-#  pool: 5
-#  username: root
-#  password: 123456
-#  socket: /var/run/mysqld/mysql.sock
+  host: db
+  protocol: tcp
 
 development:
   <<: *default
-  # database: planner_development
+  database: <%= ENV['MYSQL_DATABASE'] || 'cev_development' %>
 
 test:
   <<: *default
-  database: planner_test
+  database: <%= ENV['MYSQL_TEST_DATABASE'] || 'cev_test' %>
 

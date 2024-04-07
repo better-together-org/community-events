@@ -1,6 +1,6 @@
 #
 Devise.setup do |config|
-  config.secret_key = ENV['devise_key']
+  config.secret_key = ENV['DEVISE_KEY']
   config.mailer_sender = 'support@grenadine.co' # will be over-ridden by mail config for conference
   require 'devise/orm/active_record'
 

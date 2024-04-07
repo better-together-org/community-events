@@ -4,7 +4,7 @@ class CreateSurveyResponses < ActiveRecord::Migration
       t.references :Person      # id of person that is the respondent
       t.references :Survey      # id of surveyin which the question is found
       t.references :SurveyQuestion # id of question that this is a response to
-      t.string :response, { :default => "" }      # response
+      t.string :response  # response
 
       t.timestamps
       t.column :lock_version, :integer, { :default => 0 }

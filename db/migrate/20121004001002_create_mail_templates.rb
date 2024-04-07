@@ -5,7 +5,7 @@ class CreateMailTemplates < ActiveRecord::Migration
       t.integer :mail_use_id
       t.string :title, { :default => "" }
       t.string :subject, { :default => "" }
-      t.text :content, { :default => "" }
+      t.text :content
       
       t.references :survey
 

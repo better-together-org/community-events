@@ -13,7 +13,7 @@ class SurveyMechanismCleanup < ActiveRecord::Migration
     remove_column :survey_answers, :code
     remove_column :survey_answers, :answer_id
     add_column :survey_answers, :sort_order, :integer
-    add_column :survey_answers, :help, :string, { :default => "" }
+    add_column :survey_answers, :help, :string
 
     add_column :surveys, :alias, :string, { :default => "" }
     add_column :surveys, :submit_string, :string, { :default => "Save" }

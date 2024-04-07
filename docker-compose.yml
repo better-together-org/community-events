@@ -1,0 +1,53 @@
+# docker-compose.yml
+
+version: '3.6'
+
+volumes:
+  cev-bundler-gems:
+  cev-db-data:
+  cev-redis:
+
+x-env-info: &env-info
+  env_file:
+    - './docker-env.conf'
+
+x-app-shared: &app-shared
+  <<: *env-info
+  image: better-together/community-events:latest
+  volumes:
+    - .:/cev
+    - cev-bundler-gems:/usr/local/bundle/
+  depends_on:
+    - db
+    # - redis
+
+services:
+  app: &app
+    <<: *app-shared
+    container_name: cev-app
+    build: .
+    command: bash -c "rm -f spec/dummy/tmp/pids/server.pid && cd ./spec/dummy && bundle exec rails s -p 3000 -b '0.0.0.0'"
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+  db:
+    container_name: cev-db
+    <<: *env-info
+    image: mysql:5.7
+    volumes:
+      - cev-db-data:/var/lib/mysql
+    ports:
+      - "3308:3306"
+  # sidekiq:
+  #   <<: *app-shared
+  #   container_name: cev-sidekiq
+  #   command: bundle exec sidekiq -C config/sidekiq.yml
+  #   depends_on:
+  #     - app
+  # redis:
+  #   image: 'redis:4.0-alpine'
+  #   container_name: cev-redis
+  #   command: redis-server
+  #   volumes:
+  #     - cev-redis:/data

@@ -4,7 +4,7 @@ class CreateSurveyGroups < ActiveRecord::Migration
       t.string :code, { :default => "" }
       t.string :name, { :default => "" }
       t.string :altname, { :default => "" }
-      t.string :description, { :default => "" }
+      t.string :description
 
       t.references :survey
 

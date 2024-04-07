@@ -2,8 +2,8 @@ class CreateSurveyFormats < ActiveRecord::Migration
   def self.up
     create_table :survey_formats do |t|
       
-      t.integer :sort_order, { :default => 0 }
-      t.string :help, { :default => "" }
+      t.integer :sort_order
+      t.string :help
       t.string :style, { :default => "" }
       t.string :description_style, { :default => "" }
       t.string :answer_style, { :default => "" }

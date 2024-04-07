@@ -3,7 +3,7 @@ class CreateSurveyQuestions < ActiveRecord::Migration
     create_table :survey_questions do |t|
       t.string :code, { :default => "" }
       t.string :title, { :default => "" }
-      t.string :question, { :default => "" }
+      t.string :question
       t.string :tags_label, { :default => "" }
 
       t.string :type, { :default => "textfield" } # type of the question...

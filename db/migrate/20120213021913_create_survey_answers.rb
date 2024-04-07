@@ -2,7 +2,7 @@ class CreateSurveyAnswers < ActiveRecord::Migration
   def self.up
     create_table :survey_answers do |t|
       t.string :code, { :default => "" }
-      t.string :answer, { :default => "" }
+      t.string :answer
       t.string :answer_id, { :default => "" }
       t.boolean :default, { :default => false }
       
