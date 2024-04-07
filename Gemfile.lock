@@ -173,7 +173,7 @@ GEM
     d3_rails (4.1.1)
       railties (>= 3.1.0)
     dalli (2.7.11)
-    database_cleaner (1.6.2)
+    database_cleaner (1.99.0)
     declarative_authorization (0.5.7)
     deep_cloneable (3.2.0)
       activerecord (>= 3.1.0, < 8)
