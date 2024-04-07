@@ -149,7 +149,7 @@ GEM
       sassc (>= 2.0.0)
     bootstrap3-datetimepicker-rails (4.7.14)
       momentjs-rails (>= 2.8.1)
-    browser (5.2.0)
+    browser (5.3.1)
     builder (3.2.4)
     capybara (3.15.1)
       addressable
