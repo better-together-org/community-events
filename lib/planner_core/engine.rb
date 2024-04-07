@@ -110,5 +110,11 @@ module PlannerCore
       ActiveRecord::Base.send(:include, Planner::Linkable)
       Planner::Linkable.setup
     end
+
+    rake_tasks do
+      Rake::Task['db:seed'].enhance do
+        load PlannerCore::Engine.root.join('db', 'seeds.rb')
+      end
+    end
   end
 end

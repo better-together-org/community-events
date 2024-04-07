@@ -14,7 +14,7 @@ end
 
 if User.count == 0
   User.create([
-    { :login => "admin", :password => "password", :password_confirmation => "password", :person_id => nil, :email => 'test@test.com' },
+    { :login => "admin", :password => "password", :password_confirmation => "password", :person_id => nil, :email => 'test@test.com', confirmed_at: DateTime.now },
   ], :without_protection => true )
 end
 
@@ -25,11 +25,11 @@ if RoleAssignment.count == 0
   ], :without_protection => true )
 end
 
-if MobileTheme.count == 0
-  MobileTheme.create([
-    { :main_background => "rgba(230,231,232,1)", :action_bar_bg => "rgba(209,210,212,1)", :body_text => "rgba(35,31,32,1)", :body_text_secondary => "rgba(167,169,171,1)", :card_background => "rgba(255,255,255,1)", :updated_ribbon => "rgba(150,201,62,1)", :hot_ribbon => "rgba(191,31,64,1)", :favourite_on => "rgba(255,255,255,1)", :card_shadow => "rgba(167,169,171,1)", :created_at => "2014-01-15 14:46:26", :updated_at => "2014-01-30 00:13:25", :favourite_on_bg => "rgba(0,173,239,1)", :favourite_off_bg => "rgba(230,231,255,1)", :favourite_off => "rgba(255,255,255,1)", :hot_ribbon_text => "rgba(255,255,255,1)", :new_ribbon => "rgba(191,31,64,1)", :new_ribbon_text => "rgba(255,255,255,1)", :item_name => "rgba(35,31,32,1)", :action_bar_text => "rgba(35,31,32,1)", :day_text => "rgba(35,31,32,1)", :date_text => "rgba(147,149,151,1)", :time_text => "rgba(43,169,224,1)", :page_flipper_text => "rgba(88,88,91,1)", :page_flipper_bg => "rgba(241,241,242,1)", :page_flipper_separators => "rgba(167,169,171,1)", :page_flipper_selection_bar => "rgba(88,88,91,1)", :updated_ribbon_text => "rgba(255,255,255,1)", :item_format => "rgba(128,130,132,1)" }
-  ], :without_protection => true )
-end
+# if MobileTheme.count == 0
+#   MobileTheme.create([
+#     { :main_background => "rgba(230,231,232,1)", :action_bar_bg => "rgba(209,210,212,1)", :body_text => "rgba(35,31,32,1)", :body_text_secondary => "rgba(167,169,171,1)", :card_background => "rgba(255,255,255,1)", :updated_ribbon => "rgba(150,201,62,1)", :hot_ribbon => "rgba(191,31,64,1)", :favourite_on => "rgba(255,255,255,1)", :card_shadow => "rgba(167,169,171,1)", :created_at => "2014-01-15 14:46:26", :updated_at => "2014-01-30 00:13:25", :favourite_on_bg => "rgba(0,173,239,1)", :favourite_off_bg => "rgba(230,231,255,1)", :favourite_off => "rgba(255,255,255,1)", :hot_ribbon_text => "rgba(255,255,255,1)", :new_ribbon => "rgba(191,31,64,1)", :new_ribbon_text => "rgba(255,255,255,1)", :item_name => "rgba(35,31,32,1)", :action_bar_text => "rgba(35,31,32,1)", :day_text => "rgba(35,31,32,1)", :date_text => "rgba(147,149,151,1)", :time_text => "rgba(43,169,224,1)", :page_flipper_text => "rgba(88,88,91,1)", :page_flipper_bg => "rgba(241,241,242,1)", :page_flipper_separators => "rgba(167,169,171,1)", :page_flipper_selection_bar => "rgba(88,88,91,1)", :updated_ribbon_text => "rgba(255,255,255,1)", :item_format => "rgba(128,130,132,1)" }
+#   ], :without_protection => true )
+# end
 
 Translation.create([
   { :locale => "fr", :key => "Acceptance", :value => "Accepté", :interpolations => nil, :is_proc => false, :created_at => nil, :updated_at => nil },
