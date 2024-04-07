@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   # Runtime dependencies
   s.add_dependency 'actionmailer'
   s.add_dependency 'activerecord'
-  s.add_dependency 'activerecord-session_store'
+  s.add_dependency 'activerecord-session_store', '1.1.3'
   s.add_dependency 'acts-as-taggable-on'
   s.add_dependency 'audited-activerecord'
   s.add_dependency 'axlsx', '~> 3.0.0.pre'
@@ -55,6 +55,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'jpbuilder'
   s.add_dependency 'jqgrid-jquery-rails', '~> 4.5.200'
   s.add_dependency 'log4r'
+  s.add_dependency 'loofah', '~> 2.1.1'
+  s.add_dependency 'mysql2', '~> 0.5.3'
+  s.add_dependency 'nokogiri', '~> 1.8.5'
   s.add_dependency 'power_enum'
   s.add_dependency 'prawn_rails'
   s.add_dependency 'prawn-table'
@@ -73,8 +76,10 @@ Gem::Specification.new do |s|
   s.add_dependency 'will_paginate'
 
   # Development dependencies
+  s.add_development_dependency 'better_errors'
+  s.add_development_dependency 'binding_of_caller'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'database_cleaner'
-  s.add_development_dependency 'factory_girl_rails'  # Consider upgrading to factory_bot if factory_girl is deprecated
-  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'factory_bot_rails', '~> 4.8.2'
+  s.add_development_dependency 'rspec-rails', '~> 3.7.2'
 end
