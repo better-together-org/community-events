@@ -41,8 +41,8 @@
             </a>
             <ul class="dropdown-menu">
                 <% I18n.available_locales.each do |lang| %>
-                    <% if lang != I18n.locale %>
-                        <li><a href="<%= '/' + lang.to_s + baseUri_no_lang + request_path %>"><%= t lang.to_s %></a></li>
+                    <% if lang.present? && lang != I18n.locale %>
+                        <li><a href="<%= '/' + lang.to_s + baseUri_no_lang + request_path %>"><%= t(lang) %></a></li>
                     <% end %>
                 <% end %>
             </ul>
