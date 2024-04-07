@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'browser'
   s.add_dependency 'carrierwave'
   s.add_dependency 'cells', '~> 3.11.3'
-  s.add_dependency 'ckeditor_rails', '4.4.7'
+  s.add_dependency 'ckeditor_rails', '4.17.0'
   s.add_dependency 'cloudinary'
   s.add_dependency 'connection_pool'
   s.add_dependency 'd3_rails'
