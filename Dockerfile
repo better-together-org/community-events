@@ -1,4 +1,4 @@
-FROM ruby:2.3.8
+FROM ruby:2.4.10
 
 # Reset sources list to the archived Stretch repositories
 RUN echo "deb [check-valid-until=no] http://archive.debian.org/debian stretch main contrib non-free" > /etc/apt/sources.list \
