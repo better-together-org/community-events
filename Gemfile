@@ -19,7 +19,7 @@ group :assets do
 end
 
 group :test do
-  gem 'test-unit', '~> 3.0'
+  gem 'test-unit', '~> 3.6'
 end
 
 group :development, :test do
