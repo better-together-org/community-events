@@ -16,7 +16,7 @@ gem 'globalize-accessors'
 gem 'axlsx', '~> 3.0.0.pre', :github => 'randym/axlsx', :branch => 'release-3.0.0'
 
 group :assets do
-  gem 'sass-rails', '~> 5.0.7'
+  gem 'sass-rails', '~> 6.0.0'
 end
 
 # group :development do
