@@ -1,80 +1,194 @@
-# config/locales/en.yml
-
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello : "Hello"
-  en    : "English"
-  en-GB : "English"
-  fr    : "French"
-  cloudinary:
-    widget:
-      sources:
-        local:
-          title: "My files"
-          drop_file: "Drop file here"
-          drop_files: "Drop files here"
-          drop_or: "Or"
-          select_file: "Select File"
-          select_files: "Select Files"
-        url:
-          title: "Web Address"
-          note: "Public URL of an image file:"
-          upload: "Upload"
-          error: "Please type a valid HTTP URL."
-        camera:
-          title: "Camera"
-          note: "Make sure your browser allows camera capture, position yourself and click Capture:"
-          capture: "Capture"
-      progress:
-        uploading: "Uploading..."
-        upload_cropped: "Upload"
-        processing: "Processing..."
-        retry_upload: "Try again"
-        use_succeeded: "OK"
-        failed_note: "Some of your images failed uploading."
-  core:
-    messages:
-      modal-indicator-msg-error: 'Please see the errors above'
-      modal-indicator-msg-general: 'Please see the messages above'
-      data-successfully-saved: 'Successfully saved'
-  planner: 
-    core:
-      messages:
-        no-parent: 'none'
-      errors:
-        people-not-found: "can not find the source or destination person"
-        must-be-a-positive-number: 'Must be a positive number.'
-        unique-mailing-error: "Combination of <b>Mailing number</b> and <b>Mailing Template</b> must be unique."
-
-  time:
-    formats:
-      start_time_with_date: "%Y-%-m-%-d, %k:%M"
-      end_time: "%k:%M"
-      event_datetime: "%-d %B %Y, %l:%M %p"
-      event_date: "%-d %B %Y"
-      event_time: "%l:%M %p"
-      event_date_and_day: "%a, %-d %B %Y"
-  date:
-    formats:
-      short_day: "%a, %b %e %Y"
-
+  add-data-source: Add Data Source
+  add-invitation-category: Add Invitation Category
+  add-item-format: Add Item Format
+  add-tag-context: Add Tag Context
+  alert-select-person-to-generate-preview: Please select a person from a mailing to
+    generate a preview
+  answer-type: Answer Type
+  area: Area(s)
+  bio-from-survey: Bio from Survey
+  btn-ok: OK
+  captcha-private-key: Captcha Private Key
+  captcha-public-key: Captcha Public Key
+  color-action-bar-bg: Action Bar (background)
+  color-action-bar-text: Action Bar Text
+  color-body-text: Body Text
+  color-body-text-secondary: Body Text (secondary)
+  color-card-background: Card Background
+  color-date-text: Date
+  color-favourite-off: Favourite Off
+  color-favourite-off-bg: Favourite Off (background)
+  color-favourite-on: Favourite On
+  color-favourite-on-bg: Favourite On (background)
+  color-hot-ribbon: Hot Ribbon (background)
+  color-hot-ribbon-text: Hot Ribbon Text
+  color-item-format: Item Format
+  color-item-name: Item Name
+  color-main-background: Main App Background Color
+  color-new-ribbon: New Ribbon (background)
+  color-new-ribbon-text: New Ribbon Text
+  color-page-flipper-bg: Flipper Background
+  color-page-flipper-selection-bar: Flipper Selection Bar
+  color-page-flipper-separators: Flipper Separators
+  color-page-flipper-text: Flipper Text
+  color-time-text: Time
+  color-updated-ribbon: Updated Ribbon (background)
+  color-updated-ribbon-text: Updated Ribbon Text
+  comm-create-mailing: Create Mailing
+  comm-create-template: Create Template
+  comm-mail-preview: Mail Preview
+  comm-mailing-list: Mailing List
+  comm-potential-participants: Potential Participants
+  company: Company
+  conference-name: Conference Name
+  conference-start-date: Conference Start Date
+  conference-time-zone: Conference Time Zone
+  config-cloudinary-api-key: Cloudinary API Key
+  config-cloudinary-api-secret: Cloudinary API Secret
+  config-cloudinary-cloud-name: Cloudinary Cloud Name
+  config-cloudinary-enhance-image-tag: Cloudinary Enhance Image Tag
+  config-cloudinary-static-image-support: Cloudinary Static Image Support
+  config-conference: Conference information
+  config-domain: Domain Name
+  config-from-email: From Email
+  config-info-email: Info Email
+  config-invitation-categories: Invitation Categories
+  config-item-formats: Item Formats
+  config-room-setups: Room Setups
+  config-tag-contexts: Tag Contexts
+  config-test-email: Test Email
+  create-address: Create Address
+  create-address-details: Create Address Details
+  create-availability: Create Availability
+  create-bio: Create Bio
+  create-data-source: Create Data Source
+  create-email: Create Email
+  create-equipment-needs: Specify Equipment Requirement
+  create-invitation-category: Create Invitation Category
+  create-invite: Create Invite
+  create-item-format: Create Item Format
+  create-phone-number: Create Phone Number
+  create-registration: Create Registration
+  create-tag-context: Create Tag Context
+  create-user: Create User
+  data-source-name: Data Source Name
+  data-sources: Data Sources
+  desc: Desc
+  edit-address: Edit Address
+  edit-availability: Edit Availability
+  edit-bio: Edit Bio
+  edit-data-source: Edit Data Source
+  edit-email: Edit Email
+  edit-invitation-category: Edit Invitation Category
+  edit-invite: Edit Invite
+  edit-item-format: Edit Item Format
+  edit-phone-number: Edit Phone Number
+  edit-registration: Edit Registration
+  edit-tag-context: Edit Tag Context
+  edit-user: Edit User
+  equipment-add-equipment-type: Add Equipment Type
+  equipment-create-equipment: Create Equipment
+  equipment-edit-equipment: Edit Equipment
+  equipment-name: Equipment Name
+  equipment-types: Equipment Types
+  failed-count: Failed Login Count
+  format-name: Format Name
+  format-position: Format Position
+  invite-category-name: Invitation Category Name
+  invite-category-position: Invite Category Position
+  is-bio: Is Bio
+  item: Item
+  item-end-time: End Time
+  item-estimated-audience-size: Estimated Audience Size
+  item-title: Item Title
+  job-title: Job Title
+  large: Large
+  large-feminin: Large
+  login-count: Login Count
+  mail-mail-usage: Mail Usage
+  mail-mailing-number: Mailing Number
+  mail-mailing-template: Mailing Template
+  mail-report-date: Date
+  mail-report-status: Status
+  mail-report-test: Test
+  mail-scheduled: Scheduled
+  mail-subject-line: Subject
+  mail-test-run: Test Run
+  mail-use: Mail Use
+  medium: Medium
+  medium-feminin: Medium
+  mobile-card-size: Card Size on Mobile Apps
+  number-of-days: Conference Length (Number of Days)
+  other-social-media: Other Social Media URL
+  page-size: Page Size
+  panels-by-room: Panels By Room
+  panels-by-timeslot: Items By Timeslot
+  person: Person
+  primary: Primary
+  print-orientation: Orientation
+  pub-ref: Pub Ref
+  publications-back-of-badge-labels: Back of Badge Labels
+  publications-include-invisible: Include invisibles
+  publications-items: Publication Items
+  publications-items-by-room: Items by Room
+  publications-items-by-time-slot: Items by Time Slot
+  publications-people: People
+  publications-program-guide: Program Guide
+  publications-publish: Publish
+  publications-publish-review: Review items to be published
+  publications-room-signs: Room Signs
+  publications-table-tents: Table Tents
+  removed: Removed
+  report-selection-include-reserved-participants: Include Reserved Participants
+  report-selection-only-items-for-print: Only Items For Print
+  reports-csv-button: Save as CSV
+  reports-items-by-room: Items by Room
+  reports-items-by-time-slot: Items by Time Slot
+  reports-people: People
+  reports-people-by-tag: People by Tags
+  reports-run-report-button: Run Report
+  role: Roles
+  room-setup-name: Room Setup Name
+  run: Run
+  schedule-publish: Schedule Publish
+  small: Small
+  small-feminin: Small
+  submenu-config: Configuration
+  submenu-manage-equipment: Manage Equipment
+  submenu-online: Online
+  submenu-print: Print
+  submenu-reports: Reports
+  submenu-users: Users
+  survey-add-group: Add Group
+  survey-add-question: Add Question
+  survey-alias: Alias
+  survey-authenticate: Authenticate
+  survey-create-query: Create Query
+  survey-create-question: Create Question
+  survey-description: Description
+  survey-email-address: e-mail address
+  survey-length-of-textbox: Length of Text Box
+  survey-mandatory: Mandatory
+  survey-operation: Operation
+  survey-order-by-date-received: Order by date received
+  survey-personal-details: Personal Details
+  survey-public: Public
+  survey-question: Question
+  survey-question-type: Question Type
+  survey-shared: Shared
+  survey-submit-string: Submit String
+  survey-thank-you-message: Thank You Message
+  survey-url-for-header-image: URL for Header Image
+  survey-use-captcha: Use Captcha
+  survey-welcome-message: Welcome Message
+  tag: Tag(s)
+  tag-context: Tag Context
+  tags-label: Tags Label
+  text-size: Text Size
+  the-page-size-for-the-pdf-output: Page size for the generated PDF document
+  user-login: User Login
+  user-password: User Password
+  user-password-again: User Password (again)
+  user-role: Role to Add
+  venue: Venue
