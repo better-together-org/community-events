@@ -2,6 +2,8 @@ class SiteConfig < ActiveRecord::Base
   attr_accessible :lock_version, :name, :time_zone, :print_time_format,
                   :start_date, :public_start_date, :end_date, :public_end_date
 
+  attr_accessor :end_date, :public_end_date
+
   def adjust_dates_with_timezone
     Time.use_zone(self.time_zone) do 
       if self.public_start_date.present?

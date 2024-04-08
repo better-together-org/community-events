@@ -3,27 +3,41 @@
 # Do not hesitate to tweak this to your needs
 if Role.count == 0
   Role.create([
-    { :title => "Planner" },
-    { :title => "Admin" },
-    { :title => "TagAdmin" },
     { :title => "Viewer" },
+    { :title => "TagAdmin" },
     { :title => "Itemeditor" },
-    { :title => "SuperPlanner" }
+    { :title => "Planner" },
+    { :title => "SuperPlanner" },
+    { :title => "Admin" }
   ], :without_protection => true )
+end
+
+if SiteConfig.count == 0
+  SiteConfig.create(
+    {
+      name: 'My Event',
+      time_zone: 'Canada/Newfoundland',
+      start_date: DateTime.now + 7.days,
+      public_start_date: DateTime.now + 7.days,
+      end_date: DateTime.now + 14.days,
+      public_end_date: DateTime.now + 14.days,
+      print_time_format: '12'
+    }
+  )
 end
 
 if User.count == 0
   User.create([
-    { :login => "admin", :password => "password", :password_confirmation => "password", :person_id => nil, :email => 'test@test.com', confirmed_at: DateTime.now },
+    { :login => "admin", :password => "password", :password_confirmation => "password", :person_id => nil, :email => 'test@test.com', confirmed_at: DateTime.now, roles: [Role.find_by(title: 'SuperPlanner')] },
   ], :without_protection => true )
 end
 
 
-if RoleAssignment.count == 0
-  RoleAssignment.create([
-    { :user_id => 1, :role_id => 2, :created_at => nil, :updated_at => nil, :lock_version => 0 },
-  ], :without_protection => true )
-end
+# if RoleAssignment.count == 0
+#   RoleAssignment.create([
+#     { :user_id => 1, :role_id => 2, :created_at => nil, :updated_at => nil, :lock_version => 0 },
+#   ], :without_protection => true )
+# end
 
 # if MobileTheme.count == 0
 #   MobileTheme.create([

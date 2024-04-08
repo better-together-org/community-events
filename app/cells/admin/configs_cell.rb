@@ -1,7 +1,7 @@
 class Admin::ConfigsCell < Cell::Rails
   
   def display
-    @extra_system_config_menu = [] if !@extra_system_config_menu
+    @extra_config_menu = [] if !@extra_config_menu
     render
   end
 
