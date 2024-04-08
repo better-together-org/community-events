@@ -54,7 +54,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'jquery-rails'
   s.add_dependency 'jquery-ui-rails'
   s.add_dependency 'jpbuilder'
-  s.add_dependency 'jqgrid-jquery-rails', '~> 4.5.200'
+  s.add_dependency 'jqgrid-jquery-rails', '>= 4.5.200', '< 4.7.0'
   s.add_dependency 'log4r'
   s.add_dependency 'loofah', '~> 2.1.1'
   s.add_dependency 'mysql2', '~> 0.5.3'
