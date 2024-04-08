@@ -4,9 +4,9 @@
             <div id="login-form">
                 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                     <div class="form-group">
-                      <%= f.label :login, class: "control-label" %>
+                      <%= f.label :email, class: "control-label" %>
                       <div>
-                        <%= f.text_field :login, class: "form-control login-field", tabindex: "1", autofocus: "autofocus", autocorrect: "off", autocapitalize: "off" %>
+                        <%= f.text_field :email, class: "form-control login-field", tabindex: "1", autofocus: "autofocus", autocorrect: "off", autocapitalize: "off" %>
                       </div>
                       <div class="voffset20">
                           <%= f.label :password, class: "control-label" %>
