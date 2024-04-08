@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'cloudinary'
   s.add_dependency 'connection_pool'
   s.add_dependency 'd3_rails'
-  s.add_dependency 'dalli', '~> 2.7.6'
+  s.add_dependency 'dalli', '>= 2.7.6', '< 3.3.0'
   s.add_dependency 'declarative_authorization'
   s.add_dependency 'deep_cloneable'
   s.add_dependency 'delayed_job'
