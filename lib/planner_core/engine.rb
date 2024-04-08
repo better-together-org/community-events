@@ -1,52 +1,53 @@
 #
 #
 #
-require 'power_enum'
-require 'geocoder'
-require 'protected_attributes'
 require 'active_support/all'
-require 'axlsx_rails'
-require "audited-activerecord"
 require 'acts-as-taggable-on'
-require 'devise'
+require 'audited-activerecord'
+require 'axlsx_rails'
 require 'bootstrap-sass'
+require 'bootstrap3-datetimepicker-rails'
+require 'browser'
+require 'carrierwave'
 require 'cells'
 require 'ckeditor_rails'
-#require "authority"
+require 'cloudinary'
+require 'connection_pool'
+require 'd3_rails'
 require 'declarative_authorization'
 require 'deep_cloneable'
-require 'i18n'
-require 'jbuilder'
-require 'jpbuilder'
-require 'mysql2'
-require 'time_diff'
-require 'will_paginate'
+require 'devise'
+require 'dalli'
+require 'encoding_sampler'
+require 'figaro'
 require 'font_assets'
-require 'log4r'
-require "browser"
+require 'geocoder'
+require 'i18n'
 require 'jquery-rails'
 require 'jquery-ui-rails'
-require 'momentjs-rails'
-require 'bootstrap3-datetimepicker-rails'
-require 'd3_rails'
+require 'jbuilder'
+require 'jpbuilder'
 require 'jqgrid-jquery-rails'
+require 'log4r'
+# require 'momentjs-rails'
+require 'mysql2'
+require 'power_enum'
+require 'protected_attributes'
 require 'prawn_rails'
 require 'prawn/table'
-require "select2-rails"
-require "recaptcha/rails" # ????
-require "recaptcha"
-require 'carrierwave'
-require 'cloudinary'
-require 'dalli'
-require "connection_pool"
-require "routing-filter"
-require "twitter-typeahead-rails"
-require "encoding_sampler"
-require "figaro"
-require "ranked-model"
-require "http_accept_language"
-#require "country_select"
-#require "i18n/js"
+require 'recaptcha'
+require 'recaptcha/rails'
+require 'routing-filter'
+require 'ranked-model'
+require 'select2-rails'
+require 'time_diff'
+require 'twitter-typeahead-rails'
+require 'http_accept_language'
+require 'will_paginate'
+# require 'country_select'
+# require 'authority'
+# require 'i18n/js'
+
 
 module PlannerCore
   class Engine < ::Rails::Engine
