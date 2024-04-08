@@ -82,5 +82,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'factory_bot_rails', '~> 4.8.2'
-  s.add_development_dependency 'rspec-rails', '~> 3.7.2'
+  s.add_development_dependency 'rspec-rails', '~> 4.1.2'
 end
