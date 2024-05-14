@@ -7,7 +7,7 @@ gem 'activerecord-session_store', '1.1.3'
 gem 'enumerations_mixin', :github => 'mrj/enumerations_mixin'
 gem 'geocoder'
 # gem 'i18n-active_record', :require => 'i18n/active_record'
-gem 'nokogiri', '~> 1.8.5'
+gem 'nokogiri', '~> 1.16.5'
 gem 'mysql2', '~> 0.5.3'
 gem "i18n-js", ">= 3.0.0.rc11"
 gem 'globalize', '~> 5.1.0' # Use the version compatible with your Rails version
